@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<style>
+  .container
+  {
+   font-size: 20px;
+   background-color: bisque;
+   border: solid black;
+   border-radius: 5%;
+   padding: 24px;
+   margin: 4px;
+   text-align: center;  
+   }
+   #time
+   {
+     font-weight: bold;
+   }
+</style>
+<body>
+   <!------<h2>What Can JavaScript Do?</h2>
+
+    <p>JavaScript can change the style of an HTML element.</p>
+    
+   
+    <img id="myimg" src="bulb.gif" width="300px" height="200px" >
+    <button type="button" onclick="document.getElementById('myimg').src='pic_bulbon.gif'">Click Me!</button>--->
+    <div class="container">
+
+      <h1> Current Time is</h1>
+    
+      <span id="time"></span>
+    </div>
+    <script>
+    
+       setInterval(updateTime, 1000);
+        function updateTime()
+        {
+          document.getElementById('time').innerHTML = new Date();
+        }
+       console.log();
+   </script>
+</body>
+
+
+</html>
